@@ -3,15 +3,26 @@
 
 int main()
 {
-    int year = 2000;
-    bool is_leap_year = (year%4 ==0) && (year%100 != 0 || year%400 ==0) ;
+    int a, b;
+    char op;
 
-    if (is_leap_year)
-    {
-        printf("leap Year");
-    }else{
-        printf("Not leap Year");
-    }
+    scanf("%d %c %d", &a, &op, &b);
+
+    switch (op){
+        case '+':
+            printf("%d", a+b );
+            break;
+        case '-':
+            printf("%d", a-b );
+            break;
+        case '*':
+            printf("%d", a*b );
+            break;
+        case '/':
+            printf("%d", a/b );
+            break;
+    };
+    
     
     
     return 0;
