@@ -3,16 +3,16 @@
 
 int main()
 {
-    int a= 8 , b=9;
+    int year = 2000;
+    bool is_leap_year = (year%4 ==0) && (year%100 != 0 || year%400 ==0) ;
 
-    bool condition = a < b;
-
-    if (condition)
+    if (is_leap_year)
     {
-        printf("true\n");
+        printf("leap Year");
     }else{
-        printf("false\n");
-    };
+        printf("Not leap Year");
+    }
+    
     
     return 0;
 }
