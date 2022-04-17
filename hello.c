@@ -1,12 +1,18 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main()
 {
-    int a= 8 , b=7;
-    if (a != b)
+    int a= 8 , b=9;
+
+    bool condition = a < b;
+
+    if (condition)
     {
-        printf("A != B\n");
-    }
+        printf("true\n");
+    }else{
+        printf("false\n");
+    };
     
     return 0;
 }
