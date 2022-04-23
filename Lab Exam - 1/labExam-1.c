@@ -1,8 +1,7 @@
 #include<stdio.h>
 
 int main(){
-
-
+    
     return 0;
 }
 
@@ -99,4 +98,18 @@ int A, B ;
         printf("%d", sum);
     }    
 
+ */
+
+
+/* 
+J :
+int x;
+    scanf("%d", &x);
+
+    if (x < 1200)
+    {
+        printf("ABC");
+    }else if( x >= 1200){
+        printf("ARC");
+    }
  */
