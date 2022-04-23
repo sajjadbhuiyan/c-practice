@@ -3,11 +3,10 @@
 int main(){
 
     
-    
     return 0;
 }
 
-
+//  i / X && i / Y && ( i%X ==0 && i%Y ==0)
 
 
 /* 
@@ -50,4 +49,24 @@ D :
 
     printf("%.3f", sum);
 
+ */
+
+/* 
+E :
+
+int X, Y, N;
+    scanf("%d %d %d", &X, &Y, &N);
+
+    for (int i = 1; i < N+1; i++)
+    {
+        if(i / X && i%X ==0 && i%Y !=0){
+            printf("Fizz\n");
+        }else if( i / Y && i%Y ==0 && i%X !=0){
+            printf("Buzz\n");
+        }else if(i%X == 0 && i / X && i%Y == 0 && i / Y){
+            printf("FizzBuzz\n");
+        }else{
+            printf("%d\n", i);
+        }
+    }
  */
