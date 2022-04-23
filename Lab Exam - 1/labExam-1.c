@@ -1,7 +1,8 @@
 #include<stdio.h>
 
 int main(){
-    
+
+
     return 0;
 }
 
@@ -81,5 +82,21 @@ int A, B, C ;
     }else{
         printf("No");
     }
+
+ */
+
+
+/* 
+H :
+int A, B ;
+    scanf("%d %d", &A, &B);
+    int sum = A + B; 
+
+    if (sum >= 10)
+    {
+        printf("error");
+    }else{
+        printf("%d", sum);
+    }    
 
  */
