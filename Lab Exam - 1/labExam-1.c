@@ -2,7 +2,18 @@
 
 int main(){
 
-    int n;
+    
+    
+    return 0;
+}
+
+
+
+
+/* 
+C : 
+
+int n;
     scanf("%d", &n);
     int count = 0;
     for (int i = 1; i <= n; i++)
@@ -16,8 +27,27 @@ int main(){
         
     }
 
-    printf("%d", count);
+    printf("%d", count); 
     
-    
-    return 0;
-}
+*/
+
+
+/* 
+D :
+
+
+    int n;
+    scanf("%d", &n);
+    float sum = 0;
+    for (int i = 1; i <= n; i++)
+    {
+        float A, B;
+        scanf("%f %f", &A, &B);
+
+        float result = A * B;
+        sum += result;
+    }
+
+    printf("%.3f", sum);
+
+ */
