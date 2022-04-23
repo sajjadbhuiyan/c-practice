@@ -1,13 +1,34 @@
 #include<stdio.h>
 
 int main(){
-    
+    char alphabet;
+    char a = 'a', e= 'e', i= 'i', o = 'o', u = 'u';
+    scanf("%c", &alphabet);
+
+    if( alphabet == a || alphabet == e || alphabet == i ||alphabet == o || alphabet == u){
+        printf("vowel");
+    }else{
+        printf("consonant");
+    }
     return 0;
 }
 
 //  i / X && i / Y && ( i%X ==0 && i%Y ==0)
 
 
+/* 
+
+char alphabet;
+    char a = 'a', e= 'e', i= 'i', o = 'o', u = 'u';
+    scanf("%c", &alphabet);
+
+    if( alphabet == a || alphabet == e || alphabet == i ||alphabet == o || alphabet == u){
+        printf("vowel");
+    }else{
+        printf("consonant");
+    }
+    
+ */
 
 /* 
 C : 
