@@ -1,12 +1,12 @@
 #include<stdio.h>
 
 int main(){
-
     
     return 0;
 }
 
 //  i / X && i / Y && ( i%X ==0 && i%Y ==0)
+
 
 
 /* 
@@ -69,4 +69,17 @@ int X, Y, N;
             printf("%d\n", i);
         }
     }
+ */
+
+/* 
+G :
+int A, B, C ;
+    scanf("%d %d %d", &A, &B, &C);
+    if (C >= A && B >= C)
+    {
+        printf("Yes");
+    }else{
+        printf("No");
+    }
+
  */
