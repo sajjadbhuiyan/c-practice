@@ -1,15 +1,7 @@
 #include<stdio.h>
 
 int main(){
-    char alphabet;
-    char a = 'a', e= 'e', i= 'i', o = 'o', u = 'u';
-    scanf("%c", &alphabet);
-
-    if( alphabet == a || alphabet == e || alphabet == i ||alphabet == o || alphabet == u){
-        printf("vowel");
-    }else{
-        printf("consonant");
-    }
+    
     return 0;
 }
 
@@ -17,7 +9,7 @@ int main(){
 
 
 /* 
-
+A :
 char alphabet;
     char a = 'a', e= 'e', i= 'i', o = 'o', u = 'u';
     scanf("%c", &alphabet);
@@ -27,7 +19,7 @@ char alphabet;
     }else{
         printf("consonant");
     }
-    
+
  */
 
 /* 
@@ -93,6 +85,15 @@ int X, Y, N;
  */
 
 /* 
+F : 
+
+int A, B, C; 
+    scanf("%d %d %d", &A, &B, &C);
+    int sequence = ;
+
+ */
+
+/* 
 G :
 int A, B, C ;
     scanf("%d %d %d", &A, &B, &C);
@@ -118,6 +119,28 @@ int A, B ;
     }else{
         printf("%d", sum);
     }    
+
+ */
+
+/* 
+I :
+int a, b, c; 
+    scanf("%d %d %d", &a, &b, &c);
+
+    int sum1 = a + b;
+    int sum2 = a + c; 
+    int sum3 = b + c; 
+
+    if (sum1 < sum2 && sum1 < sum3)
+    {
+        printf("%d", sum1);
+    }else if (sum2 < sum1 && sum2 < sum3)
+    {
+        printf("%d", sum2);
+    }else
+    {
+        printf("%d", sum3);
+    }
 
  */
 
