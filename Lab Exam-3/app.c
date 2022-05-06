@@ -2,6 +2,7 @@
 
 int main(){
     
+
     
     return 0;
 }
@@ -200,4 +201,21 @@ int X;
             printf("expert");
         }  
     }
+ */
+
+/* 
+J :
+
+    int abc, a, b, c, bca, cab;
+    scanf("%d", &abc);
+    
+    a = abc/100;
+    b = abc/10-a*10;
+    c = abc-b*10-a*100;
+
+    bca = b*100+c*10+a;
+    cab = c*100+a*10+b;
+
+    printf("%d", abc+bca+cab);
+
  */
