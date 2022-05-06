@@ -2,20 +2,56 @@
 
 int main(){
     
+    
     return 0;
 }
+
+/* 
+
+Takahashi and Aoki decided to train themselves by running.
+Takahashi repeats the following schedule: "Run for A seconds at B meters per second and then rest for C seconds."
+Aoki repeats the following schedule: "Run for D seconds at E meters per second and then rest for F seconds."
+When X seconds have passed since they simultaneously started running, which of Takahashi and Aoki is ahead?
+ */
 
     // Wrong answer on test 4
 
 /* 
 A :
-char  a[1], b[1], c[1];
-    scanf("%s %s %s", &a, &b, &c);
-    char x[3] = a[1]+b[1]+c[1];
-    printf("%s", a);
-    int x = atoi(a);
-    int y = atoi(b);
-    int z = atoi(c); 
+int N, K, A, count = 0;
+    scanf("%d %d %d", &N, &K, &A);
+    int i = A;
+    while (i <= N)
+    {
+        printf("%d\n", i);
+        count++;
+        if (i >= N)
+        {
+            i = 1;
+            while ( i <= (K - count))
+            {
+                printf("%d\n", i);
+                count++;
+                if (i >= N)
+                {
+                    i = 1;
+                    while (i <= (K - count))
+                    {
+                        printf("%d\n", i);
+                        i++;
+                    }
+                    return 0;
+                }else{
+                    i++;
+                }
+            }
+              
+        }else{
+            i++;
+        }
+        
+        
+    }
     
 */
 
@@ -106,16 +142,39 @@ H :
 
 int n;
     scanf("%d", &n);
-        if (n == 1)
+
+    for (int i = 1; i <= n; i++)
+    {
+        if (i%2 != 0)
         {
-            printf("I hate it");
-        }else if (n == 2)
-        {
-            printf("I hate that I love it");
-        }else if (n == 3)
-        {
-            printf("I hate that I love that I hate it");
+            if (i == n)
+            {
+                printf("I hate it\t");
+            }else{
+                if (i != n)
+                {
+                    printf("I hate that\t");
+                }else{
+                    printf("I hate\t");
+                }
+            }
+            
+        }else{
+
+            if ( i == n)
+            {
+                printf("I love it\t");
+            }else{
+                if (i != n)
+                {
+                    printf("I love that\t");
+                }else{
+                    printf("I love\t");
+                }
+            }
         }
+        
+    }
  */
 
 
