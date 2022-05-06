@@ -1,10 +1,11 @@
 #include<stdio.h>
-int main(){
 
+int main(){
     
     return 0;
 }
 
+    // Wrong answer on test 4
 
 /* 
 A :
@@ -83,6 +84,40 @@ int n;
     // Idleness limit exceeded on test 1
 
  */
+
+
+/* 
+G :
+
+int A, B, count = 0;
+    scanf("%d %d", &A, &B);
+    
+    for (int i = A; i <= B; i++)
+    {
+        count++;
+    }
+    printf("%d", count);
+
+ */
+
+
+/* 
+H :
+
+int n;
+    scanf("%d", &n);
+        if (n == 1)
+        {
+            printf("I hate it");
+        }else if (n == 2)
+        {
+            printf("I hate that I love it");
+        }else if (n == 3)
+        {
+            printf("I hate that I love that I hate it");
+        }
+ */
+
 
 
 /* 
