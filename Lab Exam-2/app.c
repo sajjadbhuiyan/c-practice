@@ -1,8 +1,16 @@
 #include<stdio.h>
 
 int main(){
+
+    int S, T, X;
+    scanf("%d %d %d", &S, &T, &X);
+
+    for (int i = 0; i <= 23; i++)
+    {
+        /* code */
+    }
     
-    
+   
     return 0;
 }
 
@@ -20,41 +28,24 @@ When X seconds have passed since they simultaneously started running, which of T
 
 /* 
 A :
-int N, K, A, count = 0;
+int N, K, A;
     scanf("%d %d %d", &N, &K, &A);
-    int i = A;
-    while (i <= N)
+    A;
+    for (int i = 1; i <= K; i++)
     {
-        printf("%d\n", i);
-        count++;
-        if (i >= N)
+        if (i == K)
         {
-            i = 1;
-            while ( i <= (K - count))
-            {
-                printf("%d\n", i);
-                count++;
-                if (i >= N)
-                {
-                    i = 1;
-                    while (i <= (K - count))
-                    {
-                        printf("%d\n", i);
-                        i++;
-                    }
-                    return 0;
-                }else{
-                    i++;
-                }
-            }
-              
-        }else{
-            i++;
+            break;
         }
-        
+         A++;
+        if (A > N)
+        {
+            A = 1;
+        }
         
     }
     
+    printf("%d", A);
 */
 
 /* 
@@ -94,13 +85,9 @@ int S, T, X;
 /* 
 D :
 
-int n;
+int n, count1 = 0, count2 = 0;
     scanf("%d", &n);
-    char A = 'A';
-    char D = 'D';
-    int count1 = 0;
-    int count2 = 0;
-    char s;
+    char A = 'A', D = 'D',s;
     for (int i = 0; i < n; i++){
         scanf("%s", &s);
 
@@ -123,7 +110,36 @@ int n;
     }
 
     // Idleness limit exceeded on test 1
+    Time limit exceeded on test 1
 
+
+ */
+
+
+/* 
+E :
+
+int A, B, C, D, E, F, X;
+    scanf("%d %d %d %d %d %d %d", &A, &B, &C, &D, &E, &F, &X);
+    int takasashi;
+    int aoki;
+    if(A + C <= X || D + F <= X){
+        takasashi = (A + B) * C;
+        aoki = (D + E) * F;
+    }else{
+        takasashi = A * B;
+        aoki = D * E;
+    }
+
+    if (takasashi > aoki)
+    {
+        printf("Takahashi");
+    }else if (aoki > takasashi)
+    {
+        printf("Aoki");
+    }else{
+        printf("Draw");
+    }
  */
 
 
